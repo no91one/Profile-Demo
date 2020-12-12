@@ -14,10 +14,11 @@
 <body>
 
     <div class="container">
+        <h1>All Users</h1>
         <div class="row">
             <%for(user of users){%>
                 <div class="card" style="height: 60vh; width: 25vw; overflow: scroll; margin: 5%;">
-                    <img style="width: 55%; height: 55%;border-radius: 50%;" src="<%=user.avatar%>"
+                    <img height="50%" width="50%" class="m-auto rounded img-fluid" src="<%=user.avatar%>"
                         class="card-img-top" alt="<%=user.name%>">
                     <div class="card-body">
                         <ul class="list-group">
