@@ -20,27 +20,23 @@
                     <img style="width: 100%; height: 55%;border-radius: 50%;" src="<%=user.avatar%>"
                         class="card-img-top" alt="<%=user.name%>">
                     <div class="card-body">
-                        <h5 class="card-title">Details</h5>
-
-                        <p class="card-text">
-                            <%=user.name%>
-                        </p>
-
-                        <p class="card-text">
-                            <%=user.email%>
-                        </p>
-
-                        <p class="card-text">
-                            <%=user.age%>
-                        </p>
-
-                        <p class="card-text">
-                            <%=user.rollno%>
-                        </p>
-
-                        <p class="card-text">
-                            <%=user.score%>
-                        </p>
+                        <ul class="list-group">
+                            <li class="list-group-item"><span>Name </span>
+                                <%=user.name%>
+                            </li>
+                            <li class="list-group-item"> <span>Email </span>
+                                <%=user.email%>
+                            </li>
+                            <li class="list-group-item"> <span>Age </span>
+                                <%=user.age%>
+                            </li>
+                            <li class="list-group-item"> <span>Rollno </span>
+                                <%=user.rollno%>
+                            </li>
+                            <li class="list-group-item"><span>Score </span>
+                                <%=user.score%>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <%}%>
